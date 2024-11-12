@@ -29,9 +29,15 @@ botao.addEventListener("click", () => {
       mensagem.style.color = "red";
     } else {
       let cor = prompt("Qual a cor da sua pele?");
-      if (corPorc[cor.toLowerCase()]) {
+      if (cor == "") {
+          mensagem.innerText = "Por favor, insira uma cor de pele";
+          mensagem.style.color = "red";
+      else if (corPorc[cor.toLowerCase()]) {
         let olhos = prompt("Qual a cor dos seus olhos?");
-        if (olhosPorc[olhos.toLowerCase()]) {
+        if (olhos == "") {
+          mensagem.innerText = "Por favor, forneça uma cor de olhos";
+          mensagem.style.color = "red";
+        else if (olhosPorc[olhos.toLowerCase()]) {
           
           // Constantes usadas para calcular a porcentagem de cada característica
           const idadeProb = idade < 18 ? 0.217 : 0.63;
