@@ -7,6 +7,10 @@ body {
   text-align: center;
   align-items: center;
   font-size: 30px;
+  border: 1px solid black;
+  margin: 5vh 10vw 5vh 10w;
+  padding: 0.5em;
+  background-color: lightblue;
 }
 
 .teste {
