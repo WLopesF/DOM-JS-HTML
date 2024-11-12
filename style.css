@@ -7,10 +7,11 @@ body {
   text-align: center;
   align-items: center;
   font-size: 30px;
-  border: 1px solid black;
-  margin: 5vh 10vw 5vh 10w;
+  border: 2px solid black;
+  margin: 10vh 15vw 10vh 15w;
   padding: 0.5em;
   background-color: lightblue;
+  
 }
 
 .teste {
