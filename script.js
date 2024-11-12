@@ -1,4 +1,4 @@
-Constantes para iniciar a relação de HTML com JS
+//Constantes para iniciar a relação de HTML com JS
 const botao = document.getElementById("inicio");
 const mensagem = document.getElementById("resultado");
 
