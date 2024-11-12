@@ -24,7 +24,7 @@ botao.addEventListener("click", () => {
 
   if (nome) {
     let idade = parseInt(prompt("Quantos anos você tem?"));
-    if (isNaN(idade) || idade <= 0) {
+  } if (isNaN(idade) || idade <= 0) {
       mensagem.innerText = "Insira uma idade válida";
       mensagem.style.color = "red";
     } else {
@@ -32,12 +32,12 @@ botao.addEventListener("click", () => {
       if (cor == "") {
           mensagem.innerText = "Por favor, insira uma cor de pele";
           mensagem.style.color = "red";
-      else if (corPorc[cor.toLowerCase()]) {
+      } else if (corPorc[cor.toLowerCase()]) {
         let olhos = prompt("Qual a cor dos seus olhos?");
-        if (olhos == "") {
+      } if (olhos == "") {
           mensagem.innerText = "Por favor, forneça uma cor de olhos";
           mensagem.style.color = "red";
-        else if (olhosPorc[olhos.toLowerCase()]) {
+      } else if (olhosPorc[olhos.toLowerCase()]) {
           
           // Constantes usadas para calcular a porcentagem de cada característica
           const idadeProb = idade < 18 ? 0.217 : 0.63;
@@ -73,6 +73,7 @@ botao.addEventListener("click", () => {
         mensagem.style.color = "red";
       }
     }
+    
   } else {
     mensagem.innerText = "Nome não dado. Por favor insira seu nome.";
     mensagem.style.color = "red";
